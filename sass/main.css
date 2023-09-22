@@ -57,6 +57,7 @@ a {
   width: 100%;
   height: 0.5rem;
   background-color: whitesmoke;
+  transition: width 0.3s;
 }
 .navigation .burger-btn__bars::before {
   position: absolute;
@@ -79,6 +80,11 @@ a {
   margin: 0 auto;
   background-color: whitesmoke;
   content: "";
+}
+.navigation .burger-btn__box:hover .burger-btn__bars,
+.navigation .burger-btn__box:hover .burger-btn__bars::before,
+.navigation .burger-btn__box:hover .burger-btn__bars::after {
+  width: 2.5rem;
 }
 .navigation__logoStyle {
   position: absolute;
@@ -105,7 +111,22 @@ a {
 }
 .navigation__mobile--show {
   display: none;
+  background-color: transparent;
 }
 .navigation ul li {
   padding: 1.3rem;
+}
+
+@keyframes navLinksAnimation {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.linksAnimation {
+  animation: navLinksAnimation 4s;
 }/*# sourceMappingURL=main.css.map */
