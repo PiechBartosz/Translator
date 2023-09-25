@@ -21,7 +21,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #ca3536;
 }
 
 .navigation {
@@ -94,7 +94,7 @@ a {
   padding-left: 2rem;
   font-size: 2rem;
   font-weight: bold;
-  color: whitesmoke;
+  color: #ca3536;
 }
 .navigation__mobile {
   width: 100%;
@@ -114,7 +114,23 @@ a {
   background-color: transparent;
 }
 .navigation ul li {
+  position: relative;
   padding: 1.3rem;
+}
+.navigation ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  width: 0;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: width 0.3s ease-in-out;
+  transform: scaleX(1);
+}
+.navigation ul li:hover::after, .navigation ul li:focus::after, .navigation ul li:active::after {
+  width: 50%;
+  transform: scaleX(1.5);
 }
 
 @keyframes navLinksAnimation {
