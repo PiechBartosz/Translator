@@ -13,12 +13,13 @@
 }
 
 body {
-  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  background: #8e9eab;
 }
 
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  color: whitesmoke;
 }
 
 ul {
@@ -110,7 +111,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+  background-color: #8e9eab;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
@@ -187,4 +188,32 @@ a {
   font-weight: bold;
   color: whitesmoke;
   text-transform: uppercase;
+}
+
+.section {
+  position: relative;
+}
+.section__text {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__heading {
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ec9a26;
+  text-transform: uppercase;
+}
+.section__aboutMeImg {
+  margin-bottom: 2rem;
+  background-image: url("../img/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  width: 20rem;
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
