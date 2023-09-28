@@ -4,6 +4,36 @@
   max-width: 1200px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.imgBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.generalText {
+  position: absolute;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 10;
+}
+.generalText__paragraph {
+  padding: 2rem;
+}
+
 *,
 *::before,
 *::after {
@@ -29,6 +59,11 @@ ul {
 a {
   text-decoration: none;
   color: whitesmoke;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
 .navigation {
@@ -216,4 +251,33 @@ a {
   height: 40rem;
   width: 20rem;
   border-radius: 15px;
+}
+.section__paragraph {
+  font-size: 1.2rem;
+}
+.section__img {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.education__img {
+  background-image: url("../img/ewa_piech_kursyhiszpanski.jpg");
+}
+
+.translations__img {
+  background-image: url("../img/translate.jpg");
+}
+
+.price__img {
+  background-image: url("../img/price.jpg");
 }/*# sourceMappingURL=main.css.map */

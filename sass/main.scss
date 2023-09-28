@@ -10,7 +10,7 @@
 }
 
 body {
-	// background: colors.$body-color;
+	// background: red;
 	background: colors.$body-color;
 }
 html {
@@ -27,6 +27,10 @@ a {
 	color: colors.$main-color;
 }
 
+h3 {
+	font-size: 2rem;
+	letter-spacing: 1.5px;
+}
 // nav mobile
 
 .navigation {
@@ -246,4 +250,84 @@ a {
 		width: 20rem;
 		border-radius: 15px;
 	}
+	&__paragraph {
+		font-size: 1.2rem;
+	}
+
+	&__img {
+		position: relative;
+		height: 75vh;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
+// education
+
+.education {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-self: center;
+
+	&__img {
+		// position: relative;
+		// height: 75vh;
+		// width: 100%;
+		background-image: url("../img/ewa_piech_kursyhiszpanski.jpg");
+		// background-position: center;
+		// background-size: cover;
+		// background-attachment: fixed;
+		// overflow: auto;
+	}
+
+	// &__bg {
+	// 	position: absolute;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	background-color: rgba(0, 0, 0, 0.5);
+	// }
+
+	// &__text {
+	// 	position: absolute;
+	// 	padding: 6rem;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	text-transform: uppercase;
+	// 	font-size: 1.2rem;
+	// 	text-align: center;
+	// 	z-index: 10;
+	// }
+
+	// &__paragraph {
+	// 	padding: 2rem;
+	// }
+}
+
+// translations
+
+.translations__img {
+	// position: relative;
+	// height: 75vh;
+	// width: 100%;
+	background-image: url("../img/translate.jpg");
+	// background-position: center;
+	// background-size: cover;
+	// background-attachment: fixed;
+}
+
+//
+
+.price__img {
+	// position: relative;
+	// height: 75vh;
+	// width: 100%;
+	background-image: url("../img/price.jpg");
+	// background-position: center;
+	// background-size: cover;
+	// background-attachment: fixed;
 }
