@@ -331,3 +331,39 @@ h3 {
 	// background-size: cover;
 	// background-attachment: fixed;
 }
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	// text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	&__text {
+		margin: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		width: 100%;
+		text-align: center;
+		border: none;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem;
+	}
+
+	&__logoStyle {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		margin: 4rem auto;
+		font-size: 2rem;
+		font-weight: bold;
+		color: colors.$text-color;
+	}
+}
+.icon-with-margin {
+	margin: 1rem 1rem;
+}

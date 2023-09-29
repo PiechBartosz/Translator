@@ -280,4 +280,37 @@ h3 {
 
 .price__img {
   background-image: url("../img/price.jpg");
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.footer__logoStyle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin: 4rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ec9a26;
+}
+
+.icon-with-margin {
+  margin: 1rem 1rem;
 }/*# sourceMappingURL=main.css.map */
