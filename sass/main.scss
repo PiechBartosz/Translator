@@ -367,3 +367,49 @@ h3 {
 .icon-with-margin {
 	margin: 1rem 1rem;
 }
+
+@media (min-width: 576px) {
+	.header {
+		&__paragraph {
+			font-size: 2rem;
+		}
+	}
+	.section__paragraph {
+		font-size: 1.6rem;
+	}
+
+	.footer {
+		p {
+			font-size: 1.4rem;
+		}
+		&__logoStyle {
+			font-size: 2.5rem;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.header {
+			&__paragraph {
+				font-size: 2rem;
+			}
+		}
+
+		.section {
+			&__heading {
+				font-size: 4rem;
+			}
+
+			&__paragraph {
+				font-size: 1.6rem;
+			}
+		}
+		.footer {
+			p {
+				font-size: 1.6rem;
+			}
+			&__logoStyle {
+				font-size: 3rem;
+			}
+		}
+	}
+}
