@@ -30,6 +30,7 @@ a {
 h3 {
 	font-size: 2rem;
 	letter-spacing: 1.5px;
+	color: colors.$heading-color;
 }
 // nav mobile
 
@@ -48,7 +49,6 @@ h3 {
 		top: 0;
 		right: 2rem;
 		padding: 2rem;
-		// background-color: blue;
 		background: none;
 		cursor: pointer;
 		border: 1px solid transparent;
@@ -64,7 +64,6 @@ h3 {
 			position: relative;
 			width: 5rem;
 			height: 5rem;
-			// background-color: green;
 		}
 
 		&__bars {
@@ -115,7 +114,8 @@ h3 {
 		padding-left: 2rem;
 		font-size: 2rem;
 		font-weight: bold;
-		color: colors.$text-color;
+		// color: colors.$text-color;
+		color: colors.$heading-color;
 	}
 
 	&__mobile {
@@ -126,7 +126,6 @@ h3 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		// background-image: colors.$body-color;
 		background-color: colors.$body-color;
 		text-transform: uppercase;
 		font-size: 1.6rem;
@@ -149,7 +148,7 @@ h3 {
 			left: 3rem;
 			width: 0;
 			height: 3px;
-			background-color: colors.$text-color;
+			background-color: colors.$heading-color;
 			transition: width 0.3s ease-in-out;
 			transform: scaleX(1);
 		}
@@ -183,7 +182,6 @@ h3 {
 .header {
 	position: relative;
 	height: 75vh;
-	// padding: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -215,7 +213,7 @@ h3 {
 		margin-top: 1rem;
 		font-size: 1.4rem;
 		font-weight: bold;
-		color: colors.$main-color;
+		color: colors.$heading-color;
 		text-transform: uppercase;
 	}
 }
@@ -233,12 +231,13 @@ h3 {
 		align-items: center;
 	}
 	&__heading {
-		padding: 2rem;
+		padding: 4rem;
 		font-size: 3rem;
 		font-weight: bold;
 		letter-spacing: 2px;
-		color: colors.$text-color;
+		color: colors.$heading-color;
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	&__aboutMeImg {
@@ -250,6 +249,17 @@ h3 {
 		width: 20rem;
 		border-radius: 15px;
 	}
+	&__aboutMetext {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
+	&__aboutMeparagraph {
+		font-size: 1.2rem;
+	}
+
 	&__paragraph {
 		font-size: 1.2rem;
 	}
@@ -273,63 +283,20 @@ h3 {
 	justify-self: center;
 
 	&__img {
-		// position: relative;
-		// height: 75vh;
-		// width: 100%;
 		background-image: url("../img/ewa_piech_kursyhiszpanski.jpg");
-		// background-position: center;
-		// background-size: cover;
-		// background-attachment: fixed;
-		// overflow: auto;
 	}
-
-	// &__bg {
-	// 	position: absolute;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	background-color: rgba(0, 0, 0, 0.5);
-	// }
-
-	// &__text {
-	// 	position: absolute;
-	// 	padding: 6rem;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// 	text-transform: uppercase;
-	// 	font-size: 1.2rem;
-	// 	text-align: center;
-	// 	z-index: 10;
-	// }
-
-	// &__paragraph {
-	// 	padding: 2rem;
-	// }
 }
 
 // translations
 
 .translations__img {
-	// position: relative;
-	// height: 75vh;
-	// width: 100%;
 	background-image: url("../img/translate.jpg");
-	// background-position: center;
-	// background-size: cover;
-	// background-attachment: fixed;
 }
 
 //
 
 .price__img {
-	// position: relative;
-	// height: 75vh;
-	// width: 100%;
 	background-image: url("../img/price.jpg");
-	// background-position: center;
-	// background-size: cover;
-	// background-attachment: fixed;
 }
 
 .footer {
@@ -338,6 +305,7 @@ h3 {
 	// text-align: center;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 
 	&__text {
 		margin: 0;
@@ -345,6 +313,13 @@ h3 {
 		width: 100%;
 		text-align: center;
 		border: none;
+	}
+	&__text p {
+		transition: transform 0.3s ease;
+	}
+	&__text p:hover {
+		cursor: pointer;
+		transform: scale(1.1);
 	}
 
 	&__logo {
@@ -361,7 +336,7 @@ h3 {
 		margin: 4rem auto;
 		font-size: 2rem;
 		font-weight: bold;
-		color: colors.$text-color;
+		color: colors.$heading-color;
 	}
 }
 .icon-with-margin {
@@ -372,6 +347,32 @@ h3 {
 	.header {
 		&__paragraph {
 			font-size: 2rem;
+		}
+	}
+
+	.section {
+		&__aboutMeImg {
+			margin-bottom: 2rem;
+			margin-right: 2rem;
+			background-image: url("../img/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+			// height: 20rem;
+			width: 20rem;
+			min-width: 20rem;
+			min-height: 30rem;
+			border-radius: 15px;
+		}
+		&__aboutMetext {
+			display: flex;
+			flex-direction: row;
+			padding: 2rem;
+			align-items: normal;
+		}
+		&__aboutMeparagraph {
+			font-size: 1.6rem;
+			column-count: 2;
+			column-gap: 2rem;
 		}
 	}
 	.section__paragraph {
