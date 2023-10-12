@@ -48,7 +48,7 @@
 }
 
 body {
-  background: #8e9eab;
+  background: #585b5c;
 }
 
 html {
@@ -152,7 +152,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #8e9eab;
+  background-color: #585b5c;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
@@ -170,16 +170,15 @@ h3 {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 3rem;
-  width: 0;
+  left: 50%;
+  right: 50%;
   height: 3px;
   background-color: #ec9a26;
-  transition: width 0.3s ease-in-out;
-  transform: scaleX(1);
+  transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
 }
 .navigation ul li:hover::after, .navigation ul li:focus::after, .navigation ul li:active::after {
-  width: 50%;
-  transform: scaleX(1.5);
+  left: 0;
+  right: 0;
 }
 
 @keyframes navLinksAnimation {
@@ -378,7 +377,21 @@ h3 {
     font-size: 2.5rem;
   }
 }
-@media (min-width: 576px) and (min-width: 768px) {
+@media (min-width: 768px) {
+  .navigation__mobile--show,
+  .navigation__mobile,
+  .burger-btn {
+    display: none;
+  }
+  .navigation__desktop {
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+  .navigation__desktop ul {
+    position: absolute;
+    display: flex;
+  }
   .header__paragraph {
     font-size: 2rem;
   }

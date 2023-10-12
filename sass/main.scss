@@ -10,7 +10,6 @@
 }
 
 body {
-	// background: red;
 	background: colors.$body-color;
 }
 html {
@@ -37,11 +36,9 @@ h3 {
 .navigation {
 	position: fixed;
 	display: flex;
-	// align-items: center;
-	// justify-content: center;
+
 	height: 92px;
 	width: 100%;
-	// dodaj na desktopie
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 1000;
 	.burger-btn {
@@ -122,7 +119,7 @@ h3 {
 		width: 100%;
 		height: 100vh;
 		display: flex;
-		// margin-top: 4rem;
+
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -145,19 +142,18 @@ h3 {
 			content: "";
 			position: absolute;
 			bottom: 0;
-			left: 3rem;
-			width: 0;
+			left: 50%;
+			right: 50%;
 			height: 3px;
 			background-color: colors.$heading-color;
-			transition: width 0.3s ease-in-out;
-			transform: scaleX(1);
+			transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
 		}
 
 		&:hover::after,
 		&:focus::after,
 		&:active::after {
-			width: 50%;
-			transform: scaleX(1.5);
+			left: 0;
+			right: 0;
 		}
 	}
 }
@@ -387,30 +383,46 @@ h3 {
 			font-size: 2.5rem;
 		}
 	}
+}
 
-	@media (min-width: 768px) {
-		.header {
-			&__paragraph {
-				font-size: 2rem;
-			}
+@media (min-width: 768px) {
+	.navigation__mobile--show,
+	.navigation__mobile,
+	.burger-btn {
+		display: none;
+	}
+	.navigation__desktop {
+		position: relative;
+		display: flex;
+		height: 100%;
+
+		ul {
+			position: absolute;
+			display: flex;
+		}
+	}
+
+	.header {
+		&__paragraph {
+			font-size: 2rem;
+		}
+	}
+
+	.section {
+		&__heading {
+			font-size: 4rem;
 		}
 
-		.section {
-			&__heading {
-				font-size: 4rem;
-			}
-
-			&__paragraph {
-				font-size: 1.6rem;
-			}
+		&__paragraph {
+			font-size: 1.6rem;
 		}
-		.footer {
-			p {
-				font-size: 1.6rem;
-			}
-			&__logoStyle {
-				font-size: 3rem;
-			}
+	}
+	.footer {
+		p {
+			font-size: 1.6rem;
+		}
+		&__logoStyle {
+			font-size: 3rem;
 		}
 	}
 }
