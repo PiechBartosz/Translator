@@ -11,6 +11,7 @@
 
 body {
 	background: colors.$body-color;
+	scroll-margin-top: 92px;
 }
 html {
 	font-size: 10px;
@@ -36,7 +37,6 @@ h3 {
 .navigation {
 	position: fixed;
 	display: flex;
-
 	height: 92px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -111,15 +111,14 @@ h3 {
 		padding-left: 2rem;
 		font-size: 2rem;
 		font-weight: bold;
-		// color: colors.$text-color;
 		color: colors.$heading-color;
+		z-index: 2000;
 	}
 
 	&__mobile {
 		width: 100%;
 		height: 100vh;
 		display: flex;
-
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -234,6 +233,7 @@ h3 {
 		color: colors.$heading-color;
 		text-transform: uppercase;
 		text-align: center;
+		scroll-margin-top: 92px;
 	}
 
 	&__aboutMeImg {

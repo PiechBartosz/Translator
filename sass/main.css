@@ -49,6 +49,7 @@
 
 body {
   background: #585b5c;
+  scroll-margin-top: 92px;
 }
 
 html {
@@ -144,6 +145,7 @@ h3 {
   font-size: 2rem;
   font-weight: bold;
   color: #ec9a26;
+  z-index: 2000;
 }
 .navigation__mobile {
   width: 100%;
@@ -248,6 +250,7 @@ h3 {
   color: #ec9a26;
   text-transform: uppercase;
   text-align: center;
+  scroll-margin-top: 92px;
 }
 .section__aboutMeImg {
   margin-bottom: 2rem;
