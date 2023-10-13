@@ -17,4 +17,14 @@ const delayLinks = () => {
 	navlinks.forEach((item) => item.classList.toggle("linksAnimation"));
 };
 
+const removalMenu = () => {
+	navlinks.forEach((item) =>
+		item.addEventListener("click", () => {
+			mobileMenu.classList.toggle("navigation__mobile--show");
+			navigation.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+		})
+	);
+};
+
 burgerBtn.addEventListener("click", showMobile);
+removalMenu();
