@@ -48,6 +48,8 @@
 }
 
 body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   background: #585b5c;
   scroll-margin-top: 92px;
 }
@@ -68,9 +70,16 @@ a {
 }
 
 h3 {
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   letter-spacing: 1.5px;
   color: #ec9a26;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-weight: bold;
 }
 
 .navigation {
@@ -142,6 +151,7 @@ h3 {
   align-items: center;
   height: 100%;
   padding-left: 2rem;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   color: #ec9a26;
@@ -156,6 +166,7 @@ h3 {
   align-items: center;
   background-color: #585b5c;
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   color: whitesmoke;
@@ -203,6 +214,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 700;
   background-image: url("../img/ewa_piech_bg.jpg");
   background-position: center;
   background-size: cover;
@@ -226,6 +239,7 @@ h3 {
 }
 .header__paragraph {
   margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   color: #ec9a26;
@@ -244,6 +258,7 @@ h3 {
 }
 .section__heading {
   padding: 4rem;
+  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -409,6 +424,7 @@ h3 {
     font-size: 1.6rem;
   }
   .footer__logoStyle {
+    font-family: "Raleway", sans-serif;
     font-size: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
